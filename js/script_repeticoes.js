@@ -15,7 +15,7 @@ const divContAcum = document.querySelector('#div-cont-acum')
 let cont = 0
 let acum = 0.0
 
-btnNum.addEventListener('click', (evt) =>{
+ btnNum.addEventListener('click', (evt) =>{
     let numDigitado = Number(inputNum.value)
  
     cont ++
@@ -26,3 +26,9 @@ btnNum.addEventListener('click', (evt) =>{
 
  inputNum.value = ''
 } )
+
+//CONTROLANDO FOR
+const inputFrase = document.querySelector('#frase')
+const inputNumRepeticao = document.querySelector('#num-repeticao')
+const btnFrase = document.querySelector('#btn-frase')
+const divFrase = document.querySelector('#div-frase')
