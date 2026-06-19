@@ -1,3 +1,4 @@
+import { calculoPercentual } from "./script_calculos.js"
 
 function mensagem(){
     console.log('Uma mensagem')
@@ -70,7 +71,7 @@ const divNumSorteio = document.querySelector('#div-num-sorteio')
 
 let contVolta = 0, numSorteado = 0, contPar = 0, contImpar = 0 
 
-const sorteo = setInterval(()=>{
+const sorteio = setInterval(()=>{
     contVolta ++
 
     numSorteado = parseInt(Math.random()* 60)
@@ -91,10 +92,10 @@ const sorteo = setInterval(()=>{
 
      divNumSorteio.innerHTML += `-----> SORTEIO ENCERRADO<----- <br>
        TOTAL DE NÚMEROS GERADOS: ${contVolta} <br>
-       TOTAL DE NÚMEROS PAR: ${contPar}
+       TOTAL DE NÚMEROS PAR: ${contPar} <br>
        TOTAL DE NÚMEROS IMPAR: ${contImpar}`
 
-        clearInterval(sorteo)
+        clearInterval(sorteio)
         contVolta = 0
         numSorteado = 0
     }
